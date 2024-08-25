@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: linear-gradient(to right, #d1d1d1, #000000);
+  animation: pulse 2s infinite alternate;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes pulse {
+  0% {
+    background-size: 200% 200%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+/* Fonte mais moderna para o número sorteado */
+.sorteio-container .resultado {
+  font-family: "Poppins", sans-serif; /* Aplica a fonte Poppins */
+  font-size: 2.5rem; /* Tamanho maior para destacar */
+  font-weight: 700; /* Peso da fonte mais grosso */
+  color: #e74c3c; /* Cor destaque para o número sorteado */
+}
+
+/* Ajusta o estilo do título */
+.sorteio-container h1 {
+  font-family: "Poppins", sans-serif; /* Aplica a fonte Poppins */
+  font-weight: 600;
+  color: #2c3e50;
+}

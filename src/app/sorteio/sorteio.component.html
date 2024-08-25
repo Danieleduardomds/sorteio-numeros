@@ -1,0 +1,19 @@
+<div
+  class="sorteio-container d-flex flex-column align-items-center justify-content-center"
+>
+  <h1 class="display-4 mb-4">Sorteio de Números</h1>
+  <div>
+    <button
+      class="btn btn-lg btn-primary px-5 py-3"
+      (click)="realizarSorteio()"
+    >
+      Sortear Número
+    </button>
+    <div *ngIf="loading" class="spinner-container mt-4">
+      <div class="spinner"></div>
+    </div>
+    <h2 *ngIf="!loading && numeroSorteado !== null" class="resultado mt-4">
+      Número Sorteado: {{ numeroSorteado }}
+    </h2>
+  </div>
+</div>
