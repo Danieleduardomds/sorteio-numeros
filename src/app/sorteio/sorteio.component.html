@@ -12,7 +12,11 @@
     <div *ngIf="loading" class="spinner-container mt-4">
       <div class="spinner"></div>
     </div>
-    <h2 *ngIf="!loading && numeroSorteado !== null" class="resultado mt-4">
+    <h2
+      *ngIf="!loading && numeroSorteado !== null"
+      class="resultado mt-4"
+      [ngClass]="{ resultado: true, pulsar: showPulsarEffect }"
+    >
       Número Sorteado: {{ numeroSorteado }}
     </h2>
   </div>
